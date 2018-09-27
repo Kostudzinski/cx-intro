@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CX intro</title>
+</head>
+
+<body>
+    <div class="signature"></div>
+    <div class="back-square"></div>
+    <div class="cadxpert"></div>
+    <div class="glow"></div>
+<!--        <div class="cadx"></div>-->
+    <div class="systemy"></div>
+    <div class="red-line"></div>
+    <div class="red-line-cover"></div>
+    <div class="white one"></div>
+    <div class="white two"></div>
+
+
+    <style>
+        .signature {
+            position: absolute;
+            top: 40%;
+            left: 640px;
+            transform: translate(-50%, -50%);
+            width: 220px;
+            height: 220px;
+            background-image: url(IMG/CX.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 20;
+            opacity: 0;
+            animation: showcx 1s ease-in-out 6s forwards, movecx 1s ease-in-out 7.7s forwards;
+        }
+        
+        .back-square {
+            position: absolute;
+            top: 40%;
+            left: 150px;
+            transform: translate(0, -50%);
+            width: 500px;
+            height: 220px;
+            background-color: #fff;
+            z-index: 16;
+            animation: movesquare 1s ease-in-out 7.8s forwards;
+        }
+        
+        .cadxpert {
+            position: absolute;
+            top: 40%;
+            left: 150px;
+            transform: translate(0, -50%);
+            width: 500px;
+            height: 220px;
+            background-image: url(IMG/CADXPERT.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 15;
+            animation: movecadxpert .8s ease-in-out 7.8s forwards;
+        }
+        
+        .glow {
+            position: absolute;
+            width: 400px;
+            height: 90px;
+            transform: rotate(45deg);
+            background-color: #fff;
+            opacity: .2;
+            top: 250px;
+            left: 225px;
+            z-index: 25;
+            animation: moveglow 1.2s ease-in-out 6.9s forwards;
+        }
+        
+/*
+        .cadx {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            height: 220px;
+            background-image: url(IMG/logo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 30;
+            opacity: 1;
+        }
+*/
+
+        
+        .systemy {
+            position: absolute;
+            top: 66%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 701px;
+            height: 220px;
+            background-image: url(IMG/system.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0;
+            animation: showcx 1s ease-in-out 9s forwards;
+        }
+        
+        .red-line {
+            position: absolute;
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0px;
+            height: 1px;
+            background-color: #d22010;
+            z-index: 30;
+            animation: redline .5s ease-in-out 9s forwards;
+        }
+        /*
+        .red-line-cover {
+            position: absolute;
+            top: 57%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            width: 701px;
+            height: 2px;
+            background-color: #fff;
+            z-index: 31;
+        }
+*/
+        
+        .white {
+            transform: rotate(45deg);
+            background-color: #fff;
+            height: 1000px;
+            width: 200px;
+            position: absolute;
+            z-index: 40;
+            left: -260px;
+            top: -100px;
+        }
+        
+        .one {
+            animation: whitemoveone 1s ease-in-out 12s forwards;
+        }
+        
+        .two {
+            width: 1000px;
+            top: -423px;
+            left: -800px;
+            animation: whitemovetwo 1s ease-in-out 12.5s forwards;
+        }
+        
+        @keyframes showcx {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes moveglow {
+            0% {
+                left: 225px;
+            }
+            100% {
+                left: 1000px;
+            }
+        }
+        
+        @keyframes movecx {
+            0% {
+                left: 640px;
+            }
+            100% {
+                left: 390px;
+            }
+        }
+        
+        @keyframes movesquare {
+            0% {
+                left: 150px;
+            }
+            100% {
+                left: 0px;
+            }
+        }
+        
+        @keyframes movecadxpert {
+            0% {
+                left: 150px;
+            }
+            100% {
+                left: 510px;
+            }
+        }
+        
+        @keyframes redline {
+            0% {
+                width: 0px;
+            }
+            100% {
+                width: 707px;
+            }
+        }
+        
+        @keyframes whitemoveone {
+            0% {
+                left: -260px;
+            }
+            100% {
+                left: 1100px;
+            }
+        }        
+        
+        @keyframes whitemovetwo {
+            0% {
+                left: -800px;
+            }
+            100% {
+                left: 140px;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
